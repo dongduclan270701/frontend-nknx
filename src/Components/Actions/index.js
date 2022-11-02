@@ -54,7 +54,7 @@ export const fetchCoinTotalBefor = async () => {
   return req.data
 }
 export const fetchAllWallet = async () => {
-  const req = await axios.get(`https://nknx-amonit.herokuapp.com//api/wallets`)
+  const req = await axios.get(`https://nknx-amonit.herokuapp.com/api/wallets`)
   return req.data
 }
 
