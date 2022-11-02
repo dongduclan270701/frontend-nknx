@@ -9,7 +9,7 @@ import ChartMining from './ChartMining';
 import "Assets/scss/MiningHistory.scss"
 import { Day, prevDayOfWeek, nextDayOfWeek } from '@progress/kendo-date-math';
 
-const endpoint = "http://localhost:1337/graphql";
+const endpoint = "https://nknx-amonit.herokuapp.com/graphql";
 
 const MiningHistory = () => {
   const [chooseDay, setChooseDay] = useState("toggle_active")

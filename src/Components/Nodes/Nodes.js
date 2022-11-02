@@ -12,7 +12,7 @@ import {
     FIND_COUNT_SYNC_QUERY_OFFLINE, FIND_COUNT_SYNC_QUERY_INSTALLED, Authorization,
     fetchDistinctSyncState
 } from 'Components/Actions/index'
-const endpoint = "http://localhost:1337/graphql";
+const endpoint = "https://nknx-amonit.herokuapp.com/graphql";
 
 const Nodes = () => {
     const [hideShow, setHideShow] = useState(true)
@@ -41,13 +41,13 @@ const Nodes = () => {
     }
     useEffect( () => {
         axios({
-            url: "http://localhost:1337/api/nodes/dashboard/distinctSyncState",
+            url: "https://nknx-amonit.herokuapp.com/api/nodes/dashboard/distinctSyncState",
             method: 'get',
             headers: {
                 'Authorization': Authorization
             }
         })
-            // axios.get(`http://localhost:1337/api/nodes/dashboard/distinctSyncState`)
+            // axios.get(`https://nknx-amonit.herokuapp.com/api/nodes/dashboard/distinctSyncState`)
             .then((result) => {
                 
                 setArrDistinceState(result.data.data)

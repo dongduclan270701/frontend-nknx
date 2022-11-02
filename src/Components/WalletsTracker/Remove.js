@@ -4,7 +4,7 @@ import axios from 'axios'
 import {
     Authorization
 } from 'Components/Actions/index'
-const endpoint = "http://localhost:1337/graphql";
+const endpoint = "https://nknx-amonit.herokuapp.com/graphql";
 
 const Remove = (props) => {
     const { toggleRemove, item } = props

@@ -12,8 +12,8 @@ import {
     FIND_COUNT_ONLINE, Authorization, BALANCE_HISTORY
 } from 'Components/Actions/index'
 import axios from 'axios'
-const endpoint = "http://localhost:1337/graphql";
-const localendpoint = "http://localhost:1337/graphql";
+const endpoint = "https://nknx-amonit.herokuapp.com/graphql";
+const localendpoint = "https://nknx-amonit.herokuapp.com/graphql";
 export const FIND_COUNT_ALL_WALLETS = `
 {
   wallets

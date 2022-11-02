@@ -6,7 +6,7 @@ import { useParams, Link, useNavigate  } from 'react-router-dom';
 import {
     Authorization
 } from "Components/Actions/index"
-const endpoint = "http://localhost:1337/graphql";
+const endpoint = "https://nknx-amonit.herokuapp.com/graphql";
 
 
 

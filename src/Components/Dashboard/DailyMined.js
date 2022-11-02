@@ -3,7 +3,7 @@ import "Assets/scss/DailyMined.scss"
 import {FIND_BLOCKS_3MONTH, Authorization} from "Components/Actions/index"
 import axios from 'axios';
 import ChartMarket from './ChartMarket';
-const endpoint = "http://localhost:1337/graphql";
+const endpoint = "https://nknx-amonit.herokuapp.com/graphql";
 
 const DailyMined = () => {
     const [getDataBlocks, setGetDataBlocks] = useState(0)

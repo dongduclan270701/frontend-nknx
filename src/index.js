@@ -9,7 +9,7 @@ import { setContext } from '@apollo/client/link/context';
 // localStorage.token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNjU4MzkwNjA3LCJleHAiOjE2NjA5ODI2MDd9.RwUb3Ob6ClAuSBOcCk4NZf2RNZIFnisue8iiAxI0eqI"
 
 const httpLink = createHttpLink({
-  uri: 'http://localhost:1337/graphql',
+  uri: 'https://nknx-amonit.herokuapp.com/graphql',
 });
 const authLink = setContext((_, { headers }) => {
   // get the authentication token from local storage if it exists

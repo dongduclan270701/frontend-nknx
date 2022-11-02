@@ -12,8 +12,8 @@ import {
 } from 'Components/Actions/index'
 import ListWallet from './ListWallet';
 import axios from 'axios'
-const endpoint = "http://localhost:1337/graphql";
-const localendpoint = "http://localhost:1337/graphql";
+const endpoint = "https://nknx-amonit.herokuapp.com/graphql";
+const localendpoint = "https://nknx-amonit.herokuapp.com/graphql";
 
 
 

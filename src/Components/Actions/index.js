@@ -18,7 +18,7 @@ export const fetchNodeTotal = async () => {
   return req.data
 }
 export const fetchDistinctSyncState = async () => {
-  const req = await axios.get(`http://localhost:1337/api/nodes/dashboard/distinctSyncState`)
+  const req = await axios.get(`https://nknx-amonit.herokuapp.com//api/nodes/dashboard/distinctSyncState`)
   return req.data
 }
 export const fetchCountryTotal = async () => {
@@ -54,7 +54,7 @@ export const fetchCoinTotalBefor = async () => {
   return req.data
 }
 export const fetchAllWallet = async () => {
-  const req = await axios.get(`http://localhost:1337/api/wallets`)
+  const req = await axios.get(`https://nknx-amonit.herokuapp.com//api/wallets`)
   return req.data
 }
 
