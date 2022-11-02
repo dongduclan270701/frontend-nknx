@@ -1,0 +1,20 @@
+#chartdiv3 {
+    width: 115%;
+    height: 350px;
+    margin-left: -35px;
+    font-size: 15px;
+    svg{
+        g{
+            text{
+                textPath{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 960px) {
+    #chartdiv3{
+        height: 550px;
+    }
+}

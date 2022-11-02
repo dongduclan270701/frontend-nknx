@@ -1,0 +1,128 @@
+
+.grid {
+    .desktop-1{
+        grid-column: span 4;
+        .row_1 {
+            grid-row: span 1;
+        }
+        .col_12 {
+            grid-column: span 12;
+        }
+        .col_4 {
+            grid-column: span 4;
+        }
+        .card_padding_normal {
+            padding: 24px;
+        }
+        .card_overflow {
+            overflow: hidden;
+        }
+        .card {
+            background: #fff;
+            border-radius: 12px;
+            box-sizing: border-box;
+            box-shadow: 2px 4px 8px rgb(223 224 226 / 12%);
+            position: relative;
+        }
+        .market-stats {
+            display: flex;
+            .market-stats__data {
+                .market-stats__heading {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 8px;
+                    h3 {
+                        font-size: 1.0625rem;
+                        font-weight: 600;
+                        line-height: 20px;
+                        margin: 0;
+                    }
+                }
+                .market-stats__numbers {
+                    display: flex;
+                    flex-flow: row wrap;
+                    .market-stats__numbers-item {
+                        width: 50%;
+                        margin-top: 24px;
+                        .market-stats__numbers-name {
+                            font-size: 1rem;
+                            color: #a2a5b9;
+                            margin-bottom: 15px;
+                        }
+                        .market-stats__numbers-value {
+                            display: flex;
+                            align-items: center;
+                            font-size: 1.25rem;
+                        }
+                        .market-stats__numbers-value_positive {
+                            .fe-trending-up {
+                                color: #5ce2b2;
+                            }
+                            .fe-trending-down {
+                                color: #d63649;
+                            }
+                            .market-stats__numbers-icon {
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+            .market-stats__chart {
+                width: 100%;
+                .price-chart[data-v-bd990b1e] {
+                    width: 100%;
+                    height: 220px;
+                    .chart_i {
+                        width: 100%;
+                        height: 100%;
+                        position: relative;
+                        left: -0.15625px;
+                    }
+                }
+            }
+        }
+        @media (max-width: 960px) {
+            .market-stats {
+                display: grid;
+                .col_6-1 {
+                    grid-column: span 6 !important;
+                }
+                .market-stats__data{
+                    margin-bottom: 35px;
+                    
+                    .market-stats__heading{
+                        h3{
+                            // margin-left: 32%;
+                        }
+                    }
+                    .market-stats__numbers{
+                        // margin-left: 7%;
+                        .market-stats__numbers-item{
+                            width: 50%;
+                            
+                        }
+                    }
+                }
+                .market-stats__chart{
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    .mobile-2{
+        display: none;
+    }
+}
+@media (max-width:960px) {
+    .grid{
+        width: 100%;
+        .mobile-1{
+            display: none;
+        }
+        .mobile-2{
+            display: block !important;
+            grid-column: span 12 !important;
+        }
+    }
+}

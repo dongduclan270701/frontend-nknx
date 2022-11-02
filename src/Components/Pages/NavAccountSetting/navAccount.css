@@ -1,0 +1,23 @@
+#nav-account{
+    display: flex;
+    font-weight: 700;
+    font-size: 1.0625rem;
+    margin-bottom: 26px;
+    border-bottom: 1.5px solid rgb(223, 223, 223);
+    padding-bottom: 10px;
+}
+.nav-account-item{
+    margin-right: 32px;
+    opacity: 0.4;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 1.125rem;
+}
+#account-setting{
+    margin-bottom: 25px;
+}
+h1{
+    font-weight: 600;
+    font-size: 1.75rem;
+}

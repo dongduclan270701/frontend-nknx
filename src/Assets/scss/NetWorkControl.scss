@@ -1,0 +1,155 @@
+.grid {
+    display: grid;
+    grid-gap: 32px;
+    grid-template-columns: repeat(12, 1fr);
+    .row_1 {
+        grid-row: span 1;
+    }
+    .col_4 {
+        grid-column: span 4;
+    }
+    .card_padding_none {
+        padding: 0;
+    }
+    .card_overflow {
+        overflow: hidden;
+    }
+    .card {
+        background: #fff;
+        border-radius: 12px;
+        box-sizing: border-box;
+        box-shadow: 2px 4px 8px rgb(223 224 226 / 12%);
+        position: relative;
+    }
+    .general-stats_gradient {
+        background: linear-gradient(172.89deg, #5769df 24.12%, #5fcff9 102.64%);
+    }
+    .general-stats {
+        padding: 64px 24px;
+        height: 100%;
+    }
+    .general-stats__btn {
+        display: none;
+    }
+    .general-stats__item {
+        .general-stats__title {
+            color: #fff;
+            text-align: center;
+            font-size: 4rem;
+            margin-bottom: 16px;
+            font-weight: 300;
+            width: 100%;
+        }
+        .general-stats__subtitle {
+            color: #fff;
+            text-align: center;
+            font-size: 0.875rem;
+            font-weight: 500;
+            width: 100%;
+        }
+        .general-stats__data {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            padding: 0 40px;
+            grid-column-gap: 20%;
+            grid-row-gap: 40px;
+            .general-stats__data-item {
+                display: flex;
+                align-items: center;
+                position: relative;
+                .general-stats__data-icon {
+                    color: #fff;
+                    margin-right: 12px;
+                    font-size: 1rem;
+                }
+                .general-stats__data-description {
+                    .general-stats__data-title {
+                        color: #fff;
+                        font-weight: 500;
+                        font-size: 1.125rem;
+                        line-height: 21px;
+                        margin-bottom: 4px;
+                    }
+                    .general-stats__data-subtitle {
+                        color: hsla(0, 0%, 100%, 0.75);
+                        font-size: 0.75rem;
+                        line-height: 14px;
+                    }
+                }
+                .fe {
+                    font-family: Feather !important;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-variant: normal;
+                    text-transform: none;
+                    line-height: 1;
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+                }
+                .fe-layers:before {
+                    content: "\e97f";
+                }
+            }
+        }
+    }
+    .general-stats__divider {
+        width: calc(100% - 56px);
+        height: 1px;
+        background-color: #e1e1ed;
+        margin: 40px auto;
+    }
+}
+@media (max-width: 960px) {
+    .content {
+        .content-wrapper_centered{
+            .grid{
+                .col_4{
+                    .general-stats_gradient{
+                        .general-stats__btn {
+                            display: flex;
+                            width: 100%;
+                            margin-top: 32px;
+                            line-height: 19px;
+                            font-weight: 500;
+                        }
+                        .general-stats__btn {
+                            display: none;
+                        }
+                        .button_theme_success {
+                            color: #fff;
+                            background: #5ce2b2;
+                        }
+                        .button_radius_medium {
+                            border-radius: 12px;
+                        }
+                        .button_width_default {
+                            padding: 12px 40px;
+                            min-width: 150px;
+                        }
+                        .button_size_large {
+                            height: 52px;
+                            font-weight: 700;
+                            font-size: .875rem;
+                            line-height: 140%;
+                        }
+                        .button {
+                            font-family: Inter,Arial;
+                            -webkit-appearance: none;
+                            -moz-appearance: none;
+                            appearance: none;
+                            text-decoration: none;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            box-sizing: border-box;
+                            border: 1px solid transparent;
+                            transition: .4s cubic-bezier(.25,.8,.25,1);
+                            outline: none;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

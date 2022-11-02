@@ -1,0 +1,17 @@
+.balance-card{
+    .card__header{
+        .card__title{
+
+        }
+    }
+}
+@media (max-width: 960px){
+.balance-card__header {
+    flex-flow: row wrap;
+    gap: 24px;
+}}
+@media (max-width: 960px){
+.stats-item__wrapper_full {
+    gap: 24px;
+    flex-flow: row wrap;
+}}

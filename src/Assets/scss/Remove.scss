@@ -1,0 +1,70 @@
+.wrapper {
+    position: absolute;
+    right: -65px;
+    top: 30px;
+    z-index: 999;
+    border-radius: 14px;
+    box-shadow: 0px 0px 10px 4px #dddddd;
+    .tooltip-inner {
+        background: #242628;
+        color: #fff;
+        border-radius: 8px;
+        padding: 5px 10px 4px;
+        font-size: 12px;
+    }
+    .popover-inner {
+        background: #fff !important;
+        color: #757981 !important;
+        border-radius: 12px !important;
+        padding: 0 !important;
+        .popover_actions {
+            min-width: 136px;
+            .popover__actions {
+                padding: 12px 16px;
+                .popover__actions-item {
+                    color: #757981;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 24px;
+                    box-sizing: border-box;
+                    transition: color 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    .popover__actions-icon {
+                        width: 16px;
+                        margin-right: 4px;
+                        path {
+                            fill: #757981;
+                        }
+                    }
+                }
+            }
+        }
+        .resize-observer[data-v-8859cc6c] {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            border: none;
+            background-color: transparent;
+            pointer-events: none;
+            display: block;
+            overflow: hidden;
+            opacity: 0;
+            .resize-observer[data-v-8859cc6c] object {
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                overflow: hidden;
+                pointer-events: none;
+                z-index: -1;
+            }
+        }
+    }
+}
